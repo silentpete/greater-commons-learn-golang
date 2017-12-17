@@ -17,8 +17,10 @@ func main() {
 	//I couldn't figure it out, so I had to watch Todds video
 
 	// create a map of "m" with short initiator ":="
+	// If we want more than one value per key, it will need to be a slice of TYPE
 	// map with key of TYPE string, and values of slice of TYPE string
-
+	// Composite Literal Example: Create Map
+	// m:= map[string][]string{}
 	m := map[string][]string{
 		`bond_james`:      []string{`Shaken, not stirred`, `Martinis`, `Women`},
 		`moneypenny_miss`: []string{`James Bond`, `Literature`, `Computer Science`},
