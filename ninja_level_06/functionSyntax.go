@@ -24,7 +24,7 @@ func firstExample() int {
 
 // keyword    = func
 // itentifier = n int
-// the int passed in with be assigned variable n
+// the int passed in will be assigned to variable n
 // return     = int
 func secondExample(n int) int {
 	x := n
