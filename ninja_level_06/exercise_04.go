@@ -29,9 +29,9 @@ func (p person) speak() {
 func main() {
 
 	p1 := person{
-		"peter",
-		"gallerani",
-		37,
+		first: "peter",
+		last:  "gallerani",
+		age:   37,
 	}
 
 	// fmt.Println("p1 first name:", p1.first)
