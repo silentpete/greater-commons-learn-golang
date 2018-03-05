@@ -1,5 +1,5 @@
-// A “callback” is when we pass a func into a func as an argument. For this exercise,
-// pass a func into a func as an argument
+// A “callback” is when we pass a func into a func as an argument.
+// For this exercise, pass a func into a func as an argument
 package main
 
 import (
@@ -7,16 +7,23 @@ import (
 )
 
 func main() {
-	word := "hello"
-	fmt.Println(say(word))
-	fmt.Println(sayPlus(say(word)))
+	name := "peter"
+	wLength := wordLength(name)
+	fmt.Println(name, "has", wLength, "characters")
+
+	wDiv := divByTwo(wordLength, name)
+	fmt.Println("modulo 2?", wDiv)
 }
 
-func say(w string) string {
-	return w
-}
-func sayPlus(w string) int {
-	return len(w)
+func wordLength(s string) int {
+	return len(s)
 }
 
-// not really as cool as todd's example and I'm not sure I'm doing callbacks correctly
+func divByTwo(si func(s1 string) int, s2 string) string {
+	sNum := si(s2)
+	if sNum%2 == 0 {
+		return "true"
+	} else {
+		return "false"
+	}
+}
