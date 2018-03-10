@@ -1,4 +1,4 @@
-# Learning GO Language
+# Learning The Go Programming Language
 
 keep the `Focus`
 
