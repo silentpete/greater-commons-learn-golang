@@ -12,11 +12,11 @@ type user struct {
 	Sayings []string
 }
 
-type ByLast []user
+type byLast []user
 
-func (a ByLast) Len() int           { return len(a) }
-func (a ByLast) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
-func (a ByLast) Less(i, j int) bool { return a[i].Last < a[j].Last }
+func (a byLast) Len() int           { return len(a) }
+func (a byLast) Swap(i, j int)      { a[i], a[j] = a[j], a[i] }
+func (a byLast) Less(i, j int) bool { return a[i].Last < a[j].Last }
 
 func main() {
 	u1 := user{
@@ -65,7 +65,7 @@ func main() {
 		}
 	}
 
-	sort.Sort(ByLast(users))
+	sort.Sort(byLast(users))
 	for _, user := range users {
 		fmt.Println(user.First, user.Last, "is", user.Age, "years old")
 		fmt.Println("and likes to say:")
