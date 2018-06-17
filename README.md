@@ -4,7 +4,9 @@ keep the `Focus`
 
 Fill the bucket, 1 drop at a time.
 
-stay `Consistency` and `Persevere`
+keep up the: `Consistency` and `Persevere` and `Grit`
+
+Remember to **BET** (benchmark, example, test)
 
 The true sign of a master, is someone who makes the difficult, easy
 
